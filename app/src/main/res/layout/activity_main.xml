@@ -26,7 +26,6 @@
             android:layout_margin="10dp"
             android:background="#20FF00FF"
             android:text="Hello Android"
-            android:visibility="gone"
             />
 
         <!-- 개별 방향의 padding, margin -->

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+        <!-- padding: 위젯의 내부 간격
+            layout_margin: 위젯의 외부 간격
+            네 방향 모두 적용 -->
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="32sp"
+            android:padding="10dp"
+            android:layout_margin="10dp"
+            android:background="#20FF00FF"
+            android:text="Hello Android"
+            android:visibility="gone"
+            />
+
+        <!-- 개별 방향의 padding, margin -->
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="32sp"
+            android:background="#20FFFF00"
+            android:paddingTop="10dp"
+            android:paddingRight="20dp"
+            android:paddingBottom="30dp"
+            android:paddingLeft="40dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="30dp"
+            android:layout_marginLeft="30dp"
+            android:text="Hello Java" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <Button
+            android:id="@+id/btnVisible"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Visible" />
+
+        <Button
+            android:id="@+id/btnGone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Gone" />
+
+        <Button
+            android:id="@+id/btnInvisible"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Invisible" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
